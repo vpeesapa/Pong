@@ -1,0 +1,7 @@
+**/__pycache__/
+**/*.ttf
+**/dist
+**/build
+
+.DS_Store
+Thumbs.db
