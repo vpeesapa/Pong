@@ -2,6 +2,7 @@
 **/*.ttf
 **/dist
 **/build
+**/*.spec
 
 .DS_Store
 Thumbs.db
