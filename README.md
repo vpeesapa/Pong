@@ -32,12 +32,17 @@ Creating an executable:
 ```bash
 $ pyinstaller main.py --onefile
 ```
-The above code creates two new directories, namely `build` and `dist`. `build` contains all the essential scripts needed to build the executable while `dist` contains the executable itself.
+The above code creates two new directories, namely `build` and `dist`. `build` contains all the essential scripts needed to build the executable while `dist` contains the executable itself. `pyinstaller` also creates a `main.spec` file that contains the specifications of the executable's build.
 
-**Note**: When the executable is first created, the `dist` directory only contains the executable and no other other file. So, if you have any images or fonts that you are using in your game, be sure to copy them to the `dist` directory for the executable to run without any hiccups
+**Note**: When the executable is first created, the `dist` directory only contains the executable and no other other file. So, if you have any images or fonts that you are using in your game, be sure to copy them to the `dist` directory for the executable to run without any hiccups.
 
 Running the executable:
 ```bash
 $ cd dist
 $ ./main
 ```
+
+## References
+* PyGame: https://pypi.org/project/pygame/
+* Pyinstaller: https://realpython.com/pyinstaller-python/
+* Solution for bug fix: [Stackoverflow Question](https://stackoverflow.com/questions/62864205/sometimes-the-ball-doesnt-bounce-off-the-paddle-in-pong-game)
