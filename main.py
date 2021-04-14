@@ -99,8 +99,10 @@ while continueGame:
 	# If the ball hits either one of the paddles, it should be reflected back
 	if player1_paddle.y <= ball.y <= player1_paddle.y + paddle_height and ball.x - ballRadius <= player1_paddle.x + paddle_width:
 		ball.x_change *= -1
+		ball.x = player1_paddle.x + paddle_width + ballRadius
 	if player2_paddle.y <= ball.y <= player2_paddle.y + paddle_height and ball.x + ballRadius >= player2_paddle.x:
 		ball.x_change *= -1
+		ball.x = player2_paddle.x - ballRadius
 
 	# Drawing all the components onto the screen
 	# Firstly, fill the window with cyan
