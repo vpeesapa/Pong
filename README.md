@@ -33,6 +33,7 @@ Creating an executable:
 $ pyinstaller main.py --onefile
 ```
 The above code creates two new directories, namely `build` and `dist`. `build` contains all the essential scripts needed to build the executable while `dist` contains the executable itself.
+
 **Note**: When the executable is first created, the `dist` directory only contains the executable and no other other file. So, if you have any images or fonts that you are using in your game, be sure to copy them to the `dist` directory for the executable to run without any hiccups
 
 Running the executable:
