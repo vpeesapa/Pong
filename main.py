@@ -27,6 +27,7 @@ player2_paddle = Paddle(Colors["indigo"],1220,350)
 
 # Create the ball
 ball = Ball(Colors["violet"],window_width / 2,window_height / 2)
+ball.reset_displacement()
 
 # Declaring a variable that proceeds the game if there is no outcome
 continueGame = True
@@ -93,8 +94,7 @@ while continueGame:
 		pygame.time.wait(1000)
 		ball.x = window_width / 2
 		ball.y = window_height / 2
-		ball.x_change = random.choice([-5,5])
-		ball.y_change = random.choice([-5,5])
+		ball.reset_displacement()
 
 	# If the ball hits either one of the paddles, it should be reflected back
 	if player1_paddle.y <= ball.y <= player1_paddle.y + paddle_height and ball.x - ballRadius <= player1_paddle.x + paddle_width:

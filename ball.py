@@ -12,5 +12,13 @@ class Ball:
 		self.y = y
 
 		# The change in the ball's displacement over time
-		self.x_change = random.choice([-5,5])
-		self.y_change = random.choice([-5,5])
+		self.x_change = 0
+		self.y_change = 0
+
+	def reset_displacement(self):
+		while True:
+			self.x_change = random.randrange(-5,5)
+			self.y_change = random.randrange(-5,5)
+
+			if self.x_change != 0 and self.y_change != 0:
+				break
