@@ -3,7 +3,7 @@
 **Author**: Varun Peesapati
 
 ## Objective of Project
-The main objective of this project was to development an implementation of the 1972 table tennis-themed classic arcade video game, **Pong**, originally developed by Atari using the `PyGame` SDL from Python.
+The main objective of this project was to develop an implementation of the 1972 table tennis-themed classic arcade video game, **Pong**, originally developed by Atari using the `PyGame` SDL from Python.
 
 ## Description of Project
 1. **main.py**: Script that initializes the game engine and runs the main gameplay loop and its accompanying logic.
@@ -34,7 +34,7 @@ $ pyinstaller main.py --onefile
 ```
 The above code creates two new directories, namely `build` and `dist`. `build` contains all the essential scripts needed to build the executable while `dist` contains the executable itself. `pyinstaller` also creates a `main.spec` file that contains the specifications of the executable's build.
 
-**Note**: When the executable is first created, the `dist` directory only contains the executable and no other other file. So, if you have any images or fonts that you are using in your game, be sure to copy them to the `dist` directory for the executable to run without any hiccups.
+**Note**: When the executable is first created, the `dist` directory only contains the executable and no other file. So, if you have any images or fonts that you are using in your game, be sure to copy them to the `dist` directory for the executable to run without any hiccups.
 
 Running the executable:
 ```bash
